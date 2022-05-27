@@ -21,6 +21,18 @@ Route::get('/cliente', function () {
         return view('./cliente/listarCliente');
 });
 
+
+
+
+//funcionario
 Route::get('/funcionario', function () {
     return view('./funcionario/listarFuncionario');
+});
+
+Route::get('/funcionario/editar', function () {
+    return view('./funcionario/EditarFuncionario');
+});
+
+Route::get('/funcionario/cadastrar', function () {
+    return view('./funcionario/CadastrarFuncionario');
 });

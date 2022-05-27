@@ -43,8 +43,53 @@
   </div>
 </nav>
 
-            <h2>teste Funcionario
+<br>
+<center><h1>Listar Funcionarios</h1></center>
+<br>
 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+    <button type="button" class="btn btn-success"><a target="_blank" href='/funcionario/cadastrar'>Cadastrar Funcionario</a></button>
+    <br>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col-6">Nome</th>
+      <th scope="col-5">Email</th>
+      <th scope="col-1">Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Arthur</td>
+      <td>arthurpirolo01@hotmail.com</td>
+      <td><div class="col-sm-12">
+              <button type="button" class="btn btn-warning" ><a href='/funcionario/editar'>Editar</a></button>
+              <button type="button" class="btn btn-danger">Deletar</button>
+          </div></td>
+    </tr>
+    <tr>
+      <td>Jacob</td>
+      <td>Thornton@gmail.com</td>
+      <td>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+              <button type="button" class="btn btn-warning" ><a target="_blank" href='/funcionario/editar'>Editar</a></button>
+              <button type="button" class="btn btn-danger">Deletar</button>
+          </div>
+        </div>
+      </div>
+      </td>
+
+
+    </tr>
+  </tbody>
+</table>
+</div>
+  </div>
+</div>
 
 
 
