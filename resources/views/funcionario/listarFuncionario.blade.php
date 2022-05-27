@@ -50,7 +50,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-    <button type="button" class="btn btn-success"><a target="_blank" href='/funcionario/cadastrar'>Cadastrar Funcionario</a></button>
+    <button type="button" class="btn btn-success"><a href='/funcionario/cadastrar'>Cadastrar Funcionario</a></button>
     <br>
 <table class="table table-striped">
   <thead>
@@ -66,7 +66,7 @@
       <td>arthurpirolo01@hotmail.com</td>
       <td><div class="col-sm-12">
               <button type="button" class="btn btn-warning" ><a href='/funcionario/editar'>Editar</a></button>
-              <button type="button" class="btn btn-danger">Deletar</button>
+              <button type="button" class="btn btn-danger"><a href='/funcionario/deletar'>Deletar</button>
           </div></td>
     </tr>
     <tr>
@@ -76,8 +76,8 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-              <button type="button" class="btn btn-warning" ><a target="_blank" href='/funcionario/editar'>Editar</a></button>
-              <button type="button" class="btn btn-danger">Deletar</button>
+              <button type="button" class="btn btn-warning" ><a href='/funcionario/editar'>Editar</a></button>
+              <button type="button" class="btn btn-danger"><a href='/funcionario/deletar'>Deletar</button>
           </div>
         </div>
       </div>

@@ -36,3 +36,7 @@ Route::get('/funcionario/editar', function () {
 Route::get('/funcionario/cadastrar', function () {
     return view('./funcionario/CadastrarFuncionario');
 });
+
+Route::get('/funcionario/deletar', function () {
+    return view('./funcionario/DeletarFuncionario');
+});
