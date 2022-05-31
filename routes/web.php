@@ -40,3 +40,8 @@ Route::get('/funcionario/cadastrar', function () {
 Route::get('/funcionario/deletar', function () {
     return view('./funcionario/DeletarFuncionario');
 });
+
+
+//Tipo Jogos
+Route::get('tipoJogo/novo','TipoJogosController@create');
+Route::post('tipoJogo/novo','TipoJogosController@store')->name('salvar_tipoJogo');

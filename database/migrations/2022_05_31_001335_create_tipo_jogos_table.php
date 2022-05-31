@@ -13,9 +13,9 @@ class CreateTipoJogosTable extends Migration
      */
     public function up()
     {
-        Schema::create('_tipo_jogos', function (Blueprint $table) {
+        Schema::create('tipo_jogos', function (Blueprint $table) {
             $table->id();
-            $table->string('descricao');
+            $table->string("descricao");
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ class CreateTipoJogosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_tipo_jogos');
+        Schema::dropIfExists('tipo_jogos');
     }
 }
