@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTipoPlataformaTable extends Migration
+class CreateTipoPlataformasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateTipoPlataformaTable extends Migration
      */
     public function up()
     {
-        Schema::create('_tipo_plataforma', function (Blueprint $table) {
+        Schema::create('tipo_plataformas', function (Blueprint $table) {
             $table->id();
-            $table->string('descricao');
+            $table->string("descricao");
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ class CreateTipoPlataformaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_tipo_plataforma');
+        Schema::dropIfExists('tipo_plataformas');
     }
 }

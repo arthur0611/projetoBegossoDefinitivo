@@ -43,5 +43,26 @@ Route::get('/funcionario/deletar', function () {
 
 
 //Tipo Jogos
+    //post
 Route::get('tipoJogo/novo','TipoJogosController@create');
 Route::post('tipoJogo/novo','TipoJogosController@store')->name('salvar_tipoJogo');
+    //read
+Route::get('/tipoJogo/listar','TipoJogosController@show');
+    //delete
+Route::get('/tipoJogo/del/{id}','TipoJogosController@destroy')->name('excluir_tipoJogo');
+    //edit
+Route::get('/tipoJogo/edit/{id}','TipoJogosController@edit')->name('editar_tipoJogo');
+Route::post('/tipoJogo/edit/{id}','TipoJogosController@update')->name('atualizar_tipoJogo');
+
+
+//Tipo Plataforma
+    //post
+Route::get('tipoPlataforma/novo','PlataformaController@create');
+Route::post('tipoPlataforma/novo','PlataformaController@store')->name('salvar_tipoPlataforma');
+    //read
+Route::get('/tipoPlataforma/listar','PlataformaController@show');
+    //delete
+Route::get('/tipoPlataforma/del/{id}','PlataformaController@destroy')->name('excluir_tipoPlataforma');
+    //edit
+Route::get('/tipoPlataforma/edit/{id}','PlataformaController@edit')->name('editar_tipoPlataforma');
+Route::post('/tipoPlataforma/edit/{id}','PlataformaController@update')->name('atualizar_tipoPlataforma');
