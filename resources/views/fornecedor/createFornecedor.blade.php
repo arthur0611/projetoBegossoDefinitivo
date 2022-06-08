@@ -4,17 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listar Plataformas</title>
-    
+    <title>cadastrar novo tipo de jogo</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-
-
-
 </head>
 <body>
-
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
@@ -49,48 +45,45 @@
 <br>
 <br>
 
-<!-- lista -->
-    <div class="container">
+<!-- formulario -->
+<div class="container">
         <div class="row">
             <div class="col-sm-12">
-    <table class="table table-striped">
-        <tr>
-            <th>Nome</th>
-            <th>Idade</th>
-            <th>Email</th>
-            <th>Cidade</th>
-            <th>Rua</th>
-            <th>CPF</th>
-            <th>Bairro</th>
-            <th>Esatdo</th>
-            <th>Complemento</th>
-            <th>Salario</th>
-            <th>Data Admissão</th>
-            <th>Editar</th>
-            <th>Deletar</th>
-        </tr>
-
-        @foreach($funcionario as $funcionario)
-        <tr>
-            <td>{{$funcionario->nome}}</td>
-            <td>{{$funcionario->idade}}</td>
-            <td>{{$funcionario->email}}</td>
-            <td>{{$funcionario->cidade}}</td>
-            <td>{{$funcionario->rua}}</td>
-            <td>{{$funcionario->cpf}}</td>
-            <td>{{$funcionario->bairro}}</td>
-            <td>{{$funcionario->estado}}</td>
-            <td>{{$funcionario->complemeto}}</td>
-            <td>{{$funcionario->salario}}</td>
-            <td>{{$funcionario->dataAdmissao}}</td>
-            <td><a href="{{ route('editar_funcionario',['id' => $funcionario->id] )}}"> Editar</a></td>
-            <td><a href="{{ route('excluir_funcionario',['id' => $funcionario->id] )}}" >Excluir</a></td> 
-        </tr>    
-        @endforeach
-    </table>
-    <a href="/funcionario/novo"><button class="btn btn-success">Cadastrar novo Funcionario</button></a>
+    <form action="{{ route('salvar_fornecedor') }}" method="post">
+        @csrf
+        <div>
+            <label for="nome"  class="form-label">Nome</label>
+            <input type="text" class="form-control" name="nome" id="nome"> 
         </div>
-    </div>   
+        <div>
+            <label for="cnpj"  class="form-label">CNPJ</label>
+            <input type="text" class="form-control" name="cnpj" id="cnpj"> 
+        </div>
+        <div>
+            <label for="nomeFantasia"  class="form-label">Nome Fantasia</label>
+            <input type="text" class="form-control" name="nomeFantasia" id="nomeFantasia"> 
+        </div>
+        <div>
+            <label for="endereco"  class="form-label">Endereço</label>
+            <input type="text" class="form-control" name="endereco" id="endereco"> 
+        </div>
+        <div>
+            <label for="contato"  class="form-label">Contato</label>
+            <input type="text" class="form-control" name="contato" id="contato"> 
+        </div>
+        <div>
+            <label for="cep"  class="form-label">CEP</label>
+            <input type="text" class="form-control" name="cep" id="cep"> 
+        </div>
+        <div>
+            <label for="site"  class="form-label">Site</label>
+            <input type="text" class="form-control" name="site" id="site"> 
+        </div>
+
+        <button type="submit" class="btn btn-success">Salvar</button>
+    </form>
+</div>
+</div>
 </div>
     
 </body>

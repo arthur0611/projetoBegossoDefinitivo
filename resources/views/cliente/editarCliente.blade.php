@@ -23,10 +23,7 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/cliente">Cliente</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/funcionario">Funcionario</a>
+          <a class="nav-link" href="/cliente">cliente</a>
         </li>
        
         <li class="nav-item">
@@ -50,51 +47,43 @@
 <div class="container">
         <div class="row">
             <div class="col-sm-12">
-    <form action="{{ route('atualizar_funcionario', ['id' => $funcionario->id]) }}" method="post">
+    <form action="{{ route('atualizar_cliente', ['id' => $cliente->id]) }}" method="post">
         @csrf
         <div>
             <label for="nome"  class="form-label">Nome</label>
-            <input type="text" class="form-control" name="nome" id="nome" value = "{{$funcionario->nome}}"> 
+            <input type="text" class="form-control" name="nome" id="nome" value = "{{$cliente->nome}}"> 
         </div>
         <div>
             <label for="idade"  class="form-label">Idade</label>
-            <input type="text" class="form-control" name="idade" id="idade" value = "{{$funcionario->idade}}"> 
+            <input type="text" class="form-control" name="idade" id="idade" value = "{{$cliente->idade}}"> 
         </div>
         <div>
             <label for="email"  class="form-label">Email</label>
-            <input type="text" class="form-control" name="email" id="email" value = "{{$funcionario->email}}"> 
+            <input type="text" class="form-control" name="email" id="email" value = "{{$cliente->email}}"> 
+        </div>
+        <div>
+            <label for="telefone"  class="form-label">Telefone</label>
+            <input type="text" class="form-control" name="telefone" id="telefone" value = "{{$cliente->telefone}}"> 
         </div>
         <div>
             <label for="cidade"  class="form-label">Cidade</label>
-            <input type="text" class="form-control" name="cidade" id="cidade" value = "{{$funcionario->cidade}}"> 
-        </div>
-        <div>
-            <label for="rua"  class="form-label">Rua</label>
-            <input type="text" class="form-control" name="rua" id="rua" value = "{{$funcionario->rua}}"> 
-        </div>
-        <div>
-            <label for="cpf"  class="form-label">CPF</label>
-            <input type="text" class="form-control" name="cpf" id="cpf" value = "{{$funcionario->cpf}}"> 
-        </div>
-        <div>
-            <label for="bairro"  class="form-label">Bairro</label>
-            <input type="text" class="form-control" name="bairro" id="bairro" value = "{{$funcionario->bairro}}"> 
+            <input type="text" class="form-control" name="cidade" id="cidade" value = "{{$cliente->cidade}}"> 
         </div>
         <div>
             <label for="estado"  class="form-label">Estado</label>
-            <input type="text" class="form-control" name="estado" id="estado" value = "{{$funcionario->estado}}"> 
+            <input type="text" class="form-control" name="estado" id="estado" value = "{{$cliente->estado}}"> 
         </div>
         <div>
-            <label for="complemento"  class="form-label">Complemento</label>
-            <input type="text" class="form-control" name="complemento" id="complemeto" value = "{{$funcionario->complemento}}"> 
+            <label for="bairro"  class="form-label">Bairro</label>
+            <input type="text" class="form-control" name="bairro" id="bairro" value = "{{$cliente->bairro}}"> 
         </div>
         <div>
-            <label for="salario"  class="form-label">Salario</label>
-            <input type="text" class="form-control" name="salario" id="salario" value = "{{$funcionario->salario}}"> 
+            <label for="rua"  class="form-label">Rua</label>
+            <input type="text" class="form-control" name="rua" id="rua" value = "{{$cliente->rua}}"> 
         </div>
         <div>
-            <label for="dataAdmissao"  class="form-label">Data Admissão</label>
-            <input type="text" class="form-control" name="dataAdmissao" id="dataAdmissao" value = "{{$funcionario->dataAdmissao}}"> 
+            <label for="cpf"  class="form-label">CPF</label>
+            <input type="text" class="form-control" name="cpf" id="cpf" value = "{{$cliente->cpf}}"> 
         </div>
 
 

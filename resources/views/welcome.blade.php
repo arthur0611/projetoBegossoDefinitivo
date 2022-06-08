@@ -36,10 +36,19 @@
           <a class="nav-link" href="/funcionario">Funcionario</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/tipoJogo/listar">listar tipo Jogos</a>
+          <a class="nav-link" href="/tipoJogo/listar">Listar Tipo Jogos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/tipoPlataforma/listar">listar Plataformas</a>
+          <a class="nav-link" href="/tipoPlataforma/listar">Listar Plataformas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/funcionario/listar">Listar Funcionario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/cliente/listar">Listar Cliente</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/fornecedor/listar">Listar Fornecedor</a>
         </li>
 
       </ul>

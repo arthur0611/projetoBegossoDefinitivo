@@ -4,17 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listar Plataformas</title>
-    
+    <title>cadastrar novo tipo de jogo</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-
-
-
 </head>
 <body>
-
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
@@ -49,48 +45,53 @@
 <br>
 <br>
 
-<!-- lista -->
-    <div class="container">
+<!-- formulario -->
+<div class="container">
         <div class="row">
             <div class="col-sm-12">
-    <table class="table table-striped">
-        <tr>
-            <th>Nome</th>
-            <th>Idade</th>
-            <th>Email</th>
-            <th>Cidade</th>
-            <th>Rua</th>
-            <th>CPF</th>
-            <th>Bairro</th>
-            <th>Esatdo</th>
-            <th>Complemento</th>
-            <th>Salario</th>
-            <th>Data Admissão</th>
-            <th>Editar</th>
-            <th>Deletar</th>
-        </tr>
-
-        @foreach($funcionario as $funcionario)
-        <tr>
-            <td>{{$funcionario->nome}}</td>
-            <td>{{$funcionario->idade}}</td>
-            <td>{{$funcionario->email}}</td>
-            <td>{{$funcionario->cidade}}</td>
-            <td>{{$funcionario->rua}}</td>
-            <td>{{$funcionario->cpf}}</td>
-            <td>{{$funcionario->bairro}}</td>
-            <td>{{$funcionario->estado}}</td>
-            <td>{{$funcionario->complemeto}}</td>
-            <td>{{$funcionario->salario}}</td>
-            <td>{{$funcionario->dataAdmissao}}</td>
-            <td><a href="{{ route('editar_funcionario',['id' => $funcionario->id] )}}"> Editar</a></td>
-            <td><a href="{{ route('excluir_funcionario',['id' => $funcionario->id] )}}" >Excluir</a></td> 
-        </tr>    
-        @endforeach
-    </table>
-    <a href="/funcionario/novo"><button class="btn btn-success">Cadastrar novo Funcionario</button></a>
+    <form action="{{ route('salvar_cliente') }}" method="post">
+        @csrf
+        <div>
+            <label for="nome"  class="form-label">Nome</label>
+            <input type="text" class="form-control" name="nome" id="nome"> 
         </div>
-    </div>   
+        <div>
+            <label for="idade"  class="form-label">Idade</label>
+            <input type="text" class="form-control" name="idade" id="idade"> 
+        </div>
+        <div>
+            <label for="email"  class="form-label">Email</label>
+            <input type="text" class="form-control" name="email" id="email"> 
+        </div>
+        <div>
+            <label for="telefone"  class="form-label">Telefone</label>
+            <input type="text" class="form-control" name="telefone" id="telefone"> 
+        </div>
+        <div>
+            <label for="cidade"  class="form-label">Cidade</label>
+            <input type="text" class="form-control" name="cidade" id="cidade"> 
+        </div>
+        <div>
+            <label for="estado"  class="form-label">Estado</label>
+            <input type="text" class="form-control" name="estado" id="estado"> 
+        </div>
+        <div>
+            <label for="bairro"  class="form-label">Bairro</label>
+            <input type="text" class="form-control" name="bairro" id="bairro"> 
+        </div>
+        <div>
+            <label for="rua"  class="form-label">Rua</label>
+            <input type="text" class="form-control" name="rua" id="rua"> 
+        </div>
+        <div>
+            <label for="cpf"  class="form-label">CPF</label>
+            <input type="text" class="form-control" name="cpf" id="cpf"> 
+        </div>
+        
+        <button type="submit" class="btn btn-success">Salvar</button>
+    </form>
+</div>
+</div>
 </div>
     
 </body>

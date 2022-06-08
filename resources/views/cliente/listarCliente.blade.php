@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Plataformas</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-        <title>Laravel</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
-    </head>
-    <body class="antialiased">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">NightFallBR</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,6 +33,10 @@
         <li class="nav-item">
           <a class="nav-link" href="/funcionario">Funcionario</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tipoJogo/listar">listar tipo Jogos</a>
+        </li>
+
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -43,10 +46,48 @@
   </div>
 </nav>
 
-            <h2>teste cliente
+<br>
+<br>
 
+<!-- lista -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+    <table class="table table-striped">
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+            <th>Bairro</th>
+            <th>Rua</th>
+            <th>CPF</th>
+            <th>Editar</th>
+            <th>Deletar</th>
+        </tr>
 
-
-
-
-    </body>    
+        @foreach($cliente as $cliente)
+        <tr>
+            <td>{{$cliente->nome}}</td>
+            <td>{{$cliente->idade}}</td>
+            <td>{{$cliente->email}}</td>
+            <td>{{$cliente->telefone}}</td>
+            <td>{{$cliente->cidade}}</td>
+            <td>{{$cliente->estado}}</td>
+            <td>{{$cliente->bairro}}</td>
+            <td>{{$cliente->rua}}</td>
+            <td>{{$cliente->cpf}}</td>
+            <td><a href="{{ route('editar_cliente',['id' => $cliente->id] )}}"> Editar</a></td>
+            <td><a href="{{ route('excluir_cliente',['id' => $cliente->id] )}}" >Excluir</a></td> 
+        </tr>    
+        @endforeach
+    </table>
+    <a href="/cliente/novo"><button class="btn btn-success">Cadastrar novo cliente</button></a>
+        </div>
+    </div>   
+</div>
+    
+</body>
+</html>

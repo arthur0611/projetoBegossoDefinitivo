@@ -27,7 +27,7 @@ class PlataformaController extends Controller
     public function destroy($id){
         $tipoPlataforma = tipo_plataforma::findOrFail($id);
         $tipoPlataforma->delete();
-        return view('tipoPlataforma.listarPlataforma');
+        return view('welcome');
     }
 
     public function edit($id){

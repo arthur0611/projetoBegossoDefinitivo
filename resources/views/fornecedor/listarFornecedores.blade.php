@@ -56,39 +56,32 @@
     <table class="table table-striped">
         <tr>
             <th>Nome</th>
-            <th>Idade</th>
-            <th>Email</th>
-            <th>Cidade</th>
-            <th>Rua</th>
-            <th>CPF</th>
-            <th>Bairro</th>
-            <th>Esatdo</th>
-            <th>Complemento</th>
-            <th>Salario</th>
-            <th>Data Admissão</th>
+            <th>CNPJ</th>
+            <th>Nome Fantasia</th>
+            <th>Endereco</th>
+            <th>Contato</th>
+            <th>CEP</th>
+            <th>Site</th>
             <th>Editar</th>
             <th>Deletar</th>
         </tr>
 
-        @foreach($funcionario as $funcionario)
+        @foreach($fornecedor as $fornecedor)
         <tr>
-            <td>{{$funcionario->nome}}</td>
-            <td>{{$funcionario->idade}}</td>
-            <td>{{$funcionario->email}}</td>
-            <td>{{$funcionario->cidade}}</td>
-            <td>{{$funcionario->rua}}</td>
-            <td>{{$funcionario->cpf}}</td>
-            <td>{{$funcionario->bairro}}</td>
-            <td>{{$funcionario->estado}}</td>
-            <td>{{$funcionario->complemeto}}</td>
-            <td>{{$funcionario->salario}}</td>
-            <td>{{$funcionario->dataAdmissao}}</td>
-            <td><a href="{{ route('editar_funcionario',['id' => $funcionario->id] )}}"> Editar</a></td>
-            <td><a href="{{ route('excluir_funcionario',['id' => $funcionario->id] )}}" >Excluir</a></td> 
+            <td>{{$fornecedor->nome}}</td>
+            <td>{{$fornecedor->cnpj}}</td>
+            <td>{{$fornecedor->nomeFantasia}}</td>
+            <td>{{$fornecedor->endereco}}</td>
+            <td>{{$fornecedor->contato}}</td>
+            <td>{{$fornecedor->cep}}</td>
+            <td>{{$fornecedor->site}}</td>
+        
+            <td><a href="{{ route('editar_fornecedor',['id' => $fornecedor->id] )}}"> Editar</a></td>
+            <td><a href="{{ route('excluir_fornecedor',['id' => $fornecedor->id] )}}" >Excluir</a></td> 
         </tr>    
         @endforeach
     </table>
-    <a href="/funcionario/novo"><button class="btn btn-success">Cadastrar novo Funcionario</button></a>
+    <a href="/fornecedor/novo"><button class="btn btn-success">Cadastrar novo fornecedor</button></a>
         </div>
     </div>   
 </div>
