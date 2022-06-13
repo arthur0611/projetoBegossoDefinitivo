@@ -30,12 +30,6 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/cliente">Cliente</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/funcionario">Funcionario</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="/tipoJogo/listar">Listar Tipo Jogos</a>
         </li>
         <li class="nav-item">
