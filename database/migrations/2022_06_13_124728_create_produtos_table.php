@@ -15,7 +15,8 @@ class CreateProdutosTable extends Migration
     {
         Schema::create('produtos', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('idTipojogo');
+            $table->foreignId('tipojogo_id')->constrained('tipo_jogos')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('tipo_plataforma_id')->constrained('tipo_plataformas')->onDelete('cascade')->onUpdate('cascade');
             $table->string("descricaoproduto");
             $table->integer('quantidadeEstoque');
             $table->float('valorCompra');
@@ -35,10 +36,6 @@ class CreateProdutosTable extends Migration
      */
     public function down()
     {
-        Schema::table('produtos',function(Blueprint $table){
-            $table->foreignId('idTipojogo')
-            ->constained()
-            ->onDelete('cascade');
-        });
+        Schema::dropIfExists('produtos');
     }
 }

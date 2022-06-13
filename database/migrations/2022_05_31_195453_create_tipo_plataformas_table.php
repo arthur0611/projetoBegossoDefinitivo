@@ -6,11 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateTipoPlataformasTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('tipo_plataformas', function (Blueprint $table) {

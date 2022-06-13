@@ -11,7 +11,8 @@ class tipo_jogo extends Model
 
     protected $fillable = ['descricao'];
 
-    public function produto(){
-        return $this->belongsTo('App\Models\produto');
-    }
+
+    public function produtos(){
+        return $this->hasMany(Produto::class,'tipojogo_id','id');
+}
 }

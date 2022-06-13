@@ -10,8 +10,12 @@ class produto extends Model
     use HasFactory;
 
 
-    public function tipojogos(){
-        return $this->hasMany('App\Models\tipo_jogo');
+    public function tipoJogo(){
+        return $this->belongsTo(tipo_jogo::class,'tipojogo_id','id');
+    }
+
+public function tipoplataformas(){
+    return $this->belongsTo(Produto::class,'tipo_plataforma_id','id');
 }
 
 }
