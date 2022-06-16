@@ -44,6 +44,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/fornecedor/listar">Listar Fornecedor</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/produto/listar">Listar Produtos</a>
+        </li>
 
       </ul>
       <form class="d-flex" role="search">
@@ -61,7 +64,7 @@
     <div class="row">
         <div class="col-sm-4">
         <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+  <img src="" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Gta 5</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -85,7 +88,46 @@
           <div class="card" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
-             <h5 class="card-title">Xbox One</h5>
+             <h5 class="card-title">Battlefield 3</h5>
+             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+             <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</div>
+
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+        <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Xbox one</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+        </div>
+
+        <div class="col-sm-4">
+        <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Playstation 4</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+             <h5 class="card-title">Xbox 360</h5>
              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>

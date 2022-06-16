@@ -55,27 +55,39 @@
             <div class="col-sm-12">
     <table class="table table-striped">
         <tr>
-            <th>Nome</th>
-            <th>CNPJ</th>
-            <th>CEP</th>
+            <th>tipojogo_id</th>
+            <th>tipo_plataforma_id</th>
+            <th>Descrição Produto</th>
+            <th>Quantidade Estoque</th>
+            <th>valor Compra</th>
+            <th>valor Venda</th>
+            <th>Data Lançamento</th>
+            <th>Empresa</th>
+            <th>Classificação Etaria</th>
+            <th>classificacao Quantidade</th>
             <th>Editar</th>
             <th>Deletar</th>
         </tr>
 
-        @foreach($fornecedor as $fornecedor)
+        @foreach($produto as $produto)
         <tr>
-            <td>{{$fornecedor->nome}}</td>
-            <td>{{$fornecedor->cnpj}}</td>
-            <td>{{$fornecedor->cep}}</td>
-        
-            <td><a href="{{ route('editar_fornecedor',['id' => $fornecedor->id] )}}"> Editar</a></td>
-            <td><a href="{{ route('excluir_fornecedor',['id' => $fornecedor->id] )}}" >Excluir</a></td> 
+            <td>{{$produto->tipojogo_id}}</td>
+            <td>{{$produto->tipo_plataforma_id}}</td>
+            <td>{{$produto->descricaoproduto}}</td>
+            <td>{{$produto->quantidadeEstoque}}</td>
+            <td>R$:{{$produto->valorCompra}}</td>
+            <td>R$:{{$produto->valorVenda}}</td>
+            <td>{{$produto->dataLancamento}}</td>
+            <td>{{$produto->empresa}}</td>
+            <td>{{$produto->classificacaoEtaria}}</td>
+            <td>{{$produto->classificacaoQuantidade}}</td>
+            <td><a href="{{ route('editar_produto',['id' => $produto->id] )}}"> Editar</a></td>
+            <td><a href="{{ route('excluir_produto',['id' => $produto->id] )}}" >Excluir</a></td> 
         </tr>    
         @endforeach
     </table>
-    <a href="/fornecedor/novo"><button class="btn btn-success">Cadastrar novo fornecedor</button></a>
-    <a class="btn btn-primary" href="/fornecedor/relatorio" role="button">Relatotio Cliente</a>      
-  </div>
+    <a href="/produto/novo"><button class="btn btn-success">Cadastrar novo Produto</button></a>
+        </div>
     </div>   
 </div>
     

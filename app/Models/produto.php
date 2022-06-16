@@ -9,12 +9,26 @@ class produto extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'tipojogo_id',
+        'tipo_plataforma_id',
+        'descricaoproduto',
+        'quantidadeEstoque',
+        'valorCompra',
+        'valorVenda',
+        'dataLancamento',
+        'empresa',
+        'classificacaoEtaria',
+        'classificacaoQuantidade',
+    ];
+
+
 
     public function tipoJogo(){
         return $this->belongsTo(tipo_jogo::class,'tipojogo_id','id');
     }
 
-public function tipoplataformas(){
+    public function tipoplataformas(){
     return $this->belongsTo(Produto::class,'tipo_plataforma_id','id');
 }
 

@@ -91,6 +91,9 @@ Route::post('/tipoPlataforma/edit/{id}','PlataformaController@update')->name('at
     Route::post('cliente/novo','ClienteController@store')->name('salvar_cliente');
         //read
     Route::get('/cliente/listar','ClienteController@show');
+        //relatorio
+    Route::get('/cliente/relatorio','ClienteController@relatorio');
+
         //delete
     Route::get('/cliente/del/{id}','ClienteController@destroy')->name('excluir_cliente');
         //edit
@@ -105,6 +108,8 @@ Route::post('/tipoPlataforma/edit/{id}','PlataformaController@update')->name('at
     Route::post('fornecedor/novo','FornecedoresController@store')->name('salvar_fornecedor');
         //read
     Route::get('/fornecedor/listar','FornecedoresController@show');
+        //relatorio
+    Route::get('/fornecedor/relatorio','FornecedoresController@relatorio');
         //delete
     Route::get('/fornecedor/del/{id}','FornecedoresController@destroy')->name('excluir_fornecedor');
         //edit
@@ -112,4 +117,14 @@ Route::post('/tipoPlataforma/edit/{id}','PlataformaController@update')->name('at
     Route::post('/fornecedor/edit/{id}','FornecedoresController@update')->name('atualizar_fornecedor');
 
 
-
+//Produto
+ //post
+    Route::get('produto/novo','ProdutoController@create');
+    Route::post('produto/novo','ProdutoController@store')->name('salvar_produto');
+ //read
+    Route::get('/produto/listar','ProdutoController@show');
+ //delete
+ Route::get('/produto/del/{id}','ProdutoController@destroy')->name('excluir_produto');
+ //edit
+Route::get('/produto/edit/{id}','ProdutoController@edit')->name('editar_produto');
+Route::post('/produto/edit/{id}','ProdutoController@update')->name('atualizar_produto');

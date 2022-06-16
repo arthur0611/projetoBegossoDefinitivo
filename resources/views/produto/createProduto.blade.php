@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cadastrar Funcionario</title>
+    <title>cadastrar Produto</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -49,53 +49,49 @@
 <div class="container">
         <div class="row">
             <div class="col-sm-12">
-    <form action="{{ route('salvar_funcionario') }}" method="post">
+    <form action="{{ route('salvar_produto') }}" method="post">
         @csrf
         <div>
-            <label for="nome"  class="form-label">Nome</label>
-            <input type="text" class="form-control" name="nome" id="nome"> 
+            <label for="tipojogo_id"  class="form-label">tipojogo_id</label>
+            <input type="number" class="form-control" name="tipojogo_id" id="tipojogo_id"> 
         </div>
         <div>
-            <label for="idade"  class="form-label">Idade</label>
-            <input type="text" class="form-control" name="idade" id="idade"> 
+            <label for="tipo_plataforma_id"  class="form-label">tipo_plataforma_id</label>
+            <input type="number" class="form-control" name="tipo_plataforma_id" id="tipo_plataforma_id"> 
         </div>
         <div>
-            <label for="email"  class="form-label">Email</label>
-            <input type="text" class="form-control" name="email" id="email"> 
+            <label for="descricaoproduto"  class="form-label">Descrição Produto</label>
+            <input type="text" class="form-control" name="descricaoproduto" id="descricaoproduto"> 
         </div>
         <div>
-            <label for="cidade"  class="form-label">Cidade</label>
-            <input type="text" class="form-control" name="cidade" id="cidade"> 
+            <label for="quantidadeEstoque"  class="form-label">Quantidade Estoque</label>
+            <input type="text" class="form-control" name="quantidadeEstoque" id="quantidadeEstoque"> 
         </div>
         <div>
-            <label for="rua"  class="form-label">Rua</label>
-            <input type="text" class="form-control" name="rua" id="rua"> 
+            <label for="valorCompra"  class="form-label">Valor Compra</label>
+            <input type="text" class="form-control" name="valorCompra" id="valorCompra"> 
         </div>
         <div>
-            <label for="cpf"  class="form-label">CPF</label>
-            <input type="text" class="form-control" name="cpf" id="cpf"> 
+            <label for="valorVenda"  class="form-label">Valor Venda</label>
+            <input type="text" class="form-control" name="valorVenda" id="valorVenda"> 
         </div>
         <div>
-            <label for="bairro"  class="form-label">Bairro</label>
-            <input type="text" class="form-control" name="bairro" id="bairro"> 
+            <label for="dataLancamento"  class="form-label">Data Lançamento</label>
+            <input type="text" class="form-control" name="dataLancamento" id="dataLancamento"> 
         </div>
         <div>
-            <label for="estado"  class="form-label">Estado</label>
-            <input type="text" class="form-control" name="estado" id="estado"> 
+            <label for="empresa"  class="form-label">Empresa</label>
+            <input type="text" class="form-control" name="empresa" id="empresa"> 
         </div>
         <div>
-            <label for="complemento"  class="form-label">Complemento</label>
-            <input type="text" class="form-control" name="complemento" id="complemeto"> 
+            <label for="classificacaoEtaria"  class="form-label">Classificacao Etaria</label>
+            <input type="text" class="form-control" name="classificacaoEtaria" id="classificacaoEtaria"> 
         </div>
         <div>
-            <label for="salario"  class="form-label">Salario</label>
-            <input type="text" class="form-control" name="salario" id="salario"> 
+            <label for="classificacaoQuantidade"  class="form-label">Classificacao Quantidade</label>
+            <input type="text" class="form-control" name="classificacaoQuantidade" id="classificacaoQuantidade"> 
         </div>
-        <div>
-            <label for="dataAdmissao"  class="form-label">Data Admissão</label>
-            <input type="text" class="form-control" name="dataAdmissao" id="dataAdmissao"> 
-        </div>
-        
+
         <button type="submit" class="btn btn-success">Salvar</button>
     </form>
 </div>

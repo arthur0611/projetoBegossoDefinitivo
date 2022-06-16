@@ -27,15 +27,7 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/cliente">Cliente</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/funcionario">Funcionario</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/tipoJogo/listar">listar tipo Jogos</a>
-        </li>
+        
 
       </ul>
       <form class="d-flex" role="search">
@@ -56,13 +48,7 @@
     <table class="table table-striped">
         <tr>
             <th>Nome</th>
-            <th>Idade</th>
             <th>Email</th>
-            <th>Telefone</th>
-            <th>Cidade</th>
-            <th>Estado</th>
-            <th>Bairro</th>
-            <th>Rua</th>
             <th>CPF</th>
             <th>Editar</th>
             <th>Deletar</th>
@@ -71,13 +57,7 @@
         @foreach($cliente as $cliente)
         <tr>
             <td>{{$cliente->nome}}</td>
-            <td>{{$cliente->idade}}</td>
             <td>{{$cliente->email}}</td>
-            <td>{{$cliente->telefone}}</td>
-            <td>{{$cliente->cidade}}</td>
-            <td>{{$cliente->estado}}</td>
-            <td>{{$cliente->bairro}}</td>
-            <td>{{$cliente->rua}}</td>
             <td>{{$cliente->cpf}}</td>
             <td><a href="{{ route('editar_cliente',['id' => $cliente->id] )}}"> Editar</a></td>
             <td><a href="{{ route('excluir_cliente',['id' => $cliente->id] )}}" >Excluir</a></td> 
@@ -85,6 +65,7 @@
         @endforeach
     </table>
     <a href="/cliente/novo"><button class="btn btn-success">Cadastrar novo cliente</button></a>
+    <a class="btn btn-primary" href="/cliente/relatorio" role="button">Relatotio clientes</a>
         </div>
     </div>   
 </div>

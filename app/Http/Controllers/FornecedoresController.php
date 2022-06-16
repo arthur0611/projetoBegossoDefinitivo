@@ -29,6 +29,10 @@ class FornecedoresController extends Controller
         return view('fornecedor.listarFornecedores',['fornecedor' => $fornecedor]);
     }
 
+    public function relatorio(){
+        $fornecedor = fornecedor::all();
+        return view('fornecedor.relatorioFornecedores',['fornecedor' => $fornecedor]);
+    } 
     
     public function destroy($id){
         $fornecedor = fornecedor::findOrFail($id);
