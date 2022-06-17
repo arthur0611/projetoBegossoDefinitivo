@@ -20,4 +20,8 @@ class cliente extends Model
         'rua',
         'cpf',
     ];
+
+    public function produtos(){
+        return $this->hasMany(Venda::class,'Cliente_id','id');
+    }
 }

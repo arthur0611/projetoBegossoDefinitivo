@@ -15,15 +15,17 @@ class CreateVendasTable extends Migration
     {
         Schema::create('vendas', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('Cliente_id')->constrained('clientes')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('Funcionario_id')->constrained('funcionarios')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('Produto_id')->constrained('produtos')->onDelete('cascade')->onUpdate('cascade');
+            $table->string("dataCompra");
+            $table->integer('quantidadeCompra');
+            $table->float('TotalVenda');
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+   
     public function down()
     {
         Schema::dropIfExists('vendas');

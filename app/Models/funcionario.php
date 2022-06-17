@@ -22,4 +22,8 @@ class funcionario extends Model
         'salario',
         'dataAdmissao',
     ];
+
+    public function produtos(){
+        return $this->hasMany(Venda::class,'Funcionario_id','id');
+}
 }

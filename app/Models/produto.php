@@ -31,5 +31,8 @@ class produto extends Model
     public function tipoplataformas(){
     return $this->belongsTo(Produto::class,'tipo_plataforma_id','id');
 }
+public function produtos(){
+    return $this->hasMany(Venda::class,'Produto_id','id');
+}
 
 }

@@ -128,3 +128,15 @@ Route::post('/tipoPlataforma/edit/{id}','PlataformaController@update')->name('at
  //edit
 Route::get('/produto/edit/{id}','ProdutoController@edit')->name('editar_produto');
 Route::post('/produto/edit/{id}','ProdutoController@update')->name('atualizar_produto');
+
+//Venda
+    //post
+    Route::get('venda/novo','vendaController@create');
+    Route::post('venda/novo','vendaController@store')->name('salvar_venda');
+    //read
+    Route::get('/venda/listar','vendaController@show');
+    //delete
+    Route::get('/venda/del/{id}','vendaController@destroy')->name('excluir_venda');
+    //edit
+    Route::get('/venda/edit/{id}','vendaController@edit')->name('editar_venda');
+    Route::post('/venda/edit/{id}','vendaController@update')->name('atualizar_venda');

@@ -47,6 +47,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/produto/listar">Listar Produtos</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/venda/listar">Listar Venda</a>
+        </li>
 
       </ul>
       <form class="d-flex" role="search">
