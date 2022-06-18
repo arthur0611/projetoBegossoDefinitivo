@@ -50,6 +50,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/venda/listar">Listar Venda</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/compraFornecedores/listar">Listar Compra de Fornecedores</a>
+        </li>
 
       </ul>
       <form class="d-flex" role="search">

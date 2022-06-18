@@ -140,3 +140,17 @@ Route::post('/produto/edit/{id}','ProdutoController@update')->name('atualizar_pr
     //edit
     Route::get('/venda/edit/{id}','vendaController@edit')->name('editar_venda');
     Route::post('/venda/edit/{id}','vendaController@update')->name('atualizar_venda');
+
+
+//Compra fornecedores
+       //post
+       Route::get('compraFornecedores/novo','compraFornecedoresController@create');
+       Route::post('compraFornecedores/novo','compraFornecedoresController@store')->name('salvar_compraFornecedores');
+       //read
+       Route::get('/compraFornecedores/listar','compraFornecedoresController@show');
+       //delete
+       Route::get('/compraFornecedores/del/{id}','compraFornecedoresController@destroy')->name('excluir_compraFornecedores');
+       //edit
+       Route::get('/compraFornecedores/edit/{id}','compraFornecedoresController@edit')->name('editar_compraFornecedores');
+       Route::post('/compraFornecedores/edit/{id}','compraFornecedoresController@update')->name('atualizar_compraFornecedores');
+   

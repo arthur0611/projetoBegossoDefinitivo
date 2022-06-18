@@ -6,15 +6,14 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateCompraFornecedorsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('compra_fornecedors', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('Fornecedor_id')->constrained('fornecedors')->onDelete('cascade')->onUpdate('cascade');
+            $table->string("dataCompra");
+            $table->integer('totalComprado');
+            $table->float('valorTotalCFornecedores');
             $table->timestamps();
         });
     }

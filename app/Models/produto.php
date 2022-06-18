@@ -12,6 +12,7 @@ class produto extends Model
     protected $fillable = [
         'tipojogo_id',
         'tipo_plataforma_id',
+        'compraFornecedor_id',
         'descricaoproduto',
         'quantidadeEstoque',
         'valorCompra',
@@ -33,6 +34,10 @@ class produto extends Model
 }
 public function produtos(){
     return $this->hasMany(Venda::class,'Produto_id','id');
+}
+
+public function compraFornecedor(){
+    return $this->hasMany(compraFornecedor::class,'compraFornecedor_id','id');
 }
 
 }

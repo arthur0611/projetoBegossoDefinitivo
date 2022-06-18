@@ -18,4 +18,9 @@ class fornecedor extends Model
         'cep',
         'site',
     ];
+
+
+    public function compraFornecedor(){
+        return $this->hasMany(compraFornecedor::class,'Fornecedor_id','id');
+}
 }
