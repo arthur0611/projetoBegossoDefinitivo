@@ -23,6 +23,11 @@ class TipoJogosController extends Controller
         return view('tipoJogos.listar',['tipojogos' => $tipojogos]);
     }
 
+    public function relatorio(){
+        $tipojogos = tipo_jogo::all();
+        return view('tipoJogos.relatorioTipoJogo',['tipojogos' => $tipojogos]);
+    }
+
     public function destroy($id){
         $tipojogos = tipo_jogo::findOrFail($id);
         $tipojogos->delete();

@@ -14,6 +14,7 @@ class compraFornecedoresController extends Controller
     public function store(Request $request){
         compraFornecedor::create([
             'Fornecedor_id'=>$request->Fornecedor_id,
+            'Produto_id'=>$request->Produto_id,
             'dataCompra'=>$request->dataCompra,
             'totalComprado'=>$request->totalComprado,
             'valorTotalCFornecedores'=>$request->valorTotalCFornecedores,
@@ -23,8 +24,13 @@ class compraFornecedoresController extends Controller
 
 
     public function show(){
-        $compraVenda = compraFornecedor::all();
-        return view('compraFornecedores.listarCompraFornecedores',['compraVenda' => $compraVenda]);
+        $compraFornecedor = compraFornecedor::all();
+        return view('compraFornecedores.listarCompraFornecedores',['compraFornecedor' => $compraFornecedor]);
+    }
+
+    public function relatorio(){
+        $compraFornecedor = compraFornecedor::all();
+        return view('compraFornecedores.relatoriocompraFornecedores',['compraFornecedor' => $compraFornecedor]);
     }
 
     public function destroy($id){
@@ -42,6 +48,7 @@ class compraFornecedoresController extends Controller
         $compraFornecedor = compraFornecedor::findOrFail($id);
         $compraFornecedor -> update([
             'Fornecedor_id'=>$request->Fornecedor_id,
+            'Produto_id'=>$request->Produto_id,
             'dataCompra'=>$request->dataCompra,
             'totalComprado'=>$request->totalComprado,
             'valorTotalCFornecedores'=>$request->valorTotalCFornecedores,

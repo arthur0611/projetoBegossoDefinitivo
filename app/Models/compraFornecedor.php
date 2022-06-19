@@ -11,6 +11,7 @@ class compraFornecedor extends Model
 
     protected $fillable = [
         'Fornecedor_id',
+        'Produto_id',
         'dataCompra',
         'totalComprado',
         'valorTotalCFornecedores'

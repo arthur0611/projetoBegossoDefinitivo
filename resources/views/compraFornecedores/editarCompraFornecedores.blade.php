@@ -51,8 +51,11 @@
             <div class="col-sm-12">
             <form action="{{ route('atualizar_compraFornecedores', ['id' => $compraFornecedor->id]) }}" method="post">
         @csrf
-        <div><label for="descricao"  class="form-label">fornecedor</label>
+        <div><label for="descricao"  class="form-label">Fornecedor</label>
             <input type="text" class="form-control" name="Fornecedor_id" id="Fornecedor_id"  value = "{{$compraFornecedor->Fornecedor_id}}"> 
+        </div>
+        <div><label for="descricao"  class="form-label">Produto</label>
+            <input type="text" class="form-control" name="Produto_id" id="Produto_id"  value = "{{$compraFornecedor->Produto_id}}"> 
         </div>
         <div><label for="descricao"  class="form-label">Data Compra</label>
             <input type="text" class="form-control" name="dataCompra" id="dataCompra" value = "{{$compraFornecedor->dataCompra}}"> 

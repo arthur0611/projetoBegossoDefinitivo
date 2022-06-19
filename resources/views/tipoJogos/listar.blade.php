@@ -69,6 +69,7 @@
         @endforeach
     </table>
     <a href="/tipoJogo/novo"><button class="btn btn-success">Cadastrar novo tipo jogo</button></a>
+    <a href="/tipoJogo/relatorio"><button class="btn btn-primary">Relatorio tipo jogo</button></a>
         </div>
     </div>   
 </div>

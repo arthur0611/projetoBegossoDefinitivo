@@ -89,7 +89,9 @@
         @endforeach
     </table>
     <a href="/funcionario/novo"><button class="btn btn-success">Cadastrar novo Funcionario</button></a>
-        </div>
+    <a href="/funcionario/relatorio"><button class="btn btn-primary">Relatorio Funcionario</button></a>
+             
+  </div>
     </div>   
 </div>
     

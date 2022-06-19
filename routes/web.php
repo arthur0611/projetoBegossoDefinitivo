@@ -23,31 +23,14 @@ Route::get('/cliente', function () {
 
 
 
-
-//funcionario
-Route::get('/funcionario', function () {
-    return view('./funcionario/listarFuncionario');
-});
-
-Route::get('/funcionario/editar', function () {
-    return view('./funcionario/EditarFuncionario');
-});
-
-Route::get('/funcionario/cadastrar', function () {
-    return view('./funcionario/CadastrarFuncionario');
-});
-
-Route::get('/funcionario/deletar', function () {
-    return view('./funcionario/DeletarFuncionario');
-});
-
-
 //Tipo Jogos
     //post
 Route::get('tipoJogo/novo','TipoJogosController@create');
 Route::post('tipoJogo/novo','TipoJogosController@store')->name('salvar_tipoJogo');
     //read
 Route::get('/tipoJogo/listar','TipoJogosController@show');
+      //relatorio
+Route::get('/tipoJogo/relatorio','TipoJogosController@relatorio');
     //delete
 Route::get('/tipoJogo/del/{id}','TipoJogosController@destroy')->name('excluir_tipoJogo');
     //edit
@@ -61,6 +44,8 @@ Route::get('tipoPlataforma/novo','PlataformaController@create');
 Route::post('tipoPlataforma/novo','PlataformaController@store')->name('salvar_tipoPlataforma');
     //read
 Route::get('/tipoPlataforma/listar','PlataformaController@show');
+      //relatorio
+Route::get('/tipoPlataforma/relatorio','PlataformaController@relatorio');
     //delete
 Route::get('/tipoPlataforma/del/{id}','PlataformaController@destroy')->name('excluir_tipoPlataforma');
     //edit
@@ -75,6 +60,8 @@ Route::post('/tipoPlataforma/edit/{id}','PlataformaController@update')->name('at
     Route::post('funcionario/novo','FuncionarioController@store')->name('salvar_funcionario');
      //read
     Route::get('/funcionario/listar','FuncionarioController@show');
+      //relatorio
+      Route::get('/funcionario/relatorio','FuncionarioController@relatorio');
         //delete
     Route::get('/funcionario/del/{id}','FuncionarioController@destroy')->name('excluir_funcionario');
         //edit
@@ -123,6 +110,8 @@ Route::post('/tipoPlataforma/edit/{id}','PlataformaController@update')->name('at
     Route::post('produto/novo','ProdutoController@store')->name('salvar_produto');
  //read
     Route::get('/produto/listar','ProdutoController@show');
+//relatorio
+    Route::get('/produto/relatorio','ProdutoController@relatorio');
  //delete
  Route::get('/produto/del/{id}','ProdutoController@destroy')->name('excluir_produto');
  //edit
@@ -135,6 +124,8 @@ Route::post('/produto/edit/{id}','ProdutoController@update')->name('atualizar_pr
     Route::post('venda/novo','vendaController@store')->name('salvar_venda');
     //read
     Route::get('/venda/listar','vendaController@show');
+    //relatorio
+    Route::get('/venda/relatorio','vendaController@relatorio');
     //delete
     Route::get('/venda/del/{id}','vendaController@destroy')->name('excluir_venda');
     //edit
@@ -148,6 +139,8 @@ Route::post('/produto/edit/{id}','ProdutoController@update')->name('atualizar_pr
        Route::post('compraFornecedores/novo','compraFornecedoresController@store')->name('salvar_compraFornecedores');
        //read
        Route::get('/compraFornecedores/listar','compraFornecedoresController@show');
+       //relatorio
+       Route::get('/compraFornecedores/relatorio','compraFornecedoresController@relatorio');
        //delete
        Route::get('/compraFornecedores/del/{id}','compraFornecedoresController@destroy')->name('excluir_compraFornecedores');
        //edit

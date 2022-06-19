@@ -11,6 +11,7 @@ class CreateCompraFornecedorsTable extends Migration
         Schema::create('compra_fornecedors', function (Blueprint $table) {
             $table->id();
             $table->foreignId('Fornecedor_id')->constrained('fornecedors')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreignId('Produto_id')->constrained('produtos')->onDelete('cascade')->onUpdate('cascade');
             $table->string("dataCompra");
             $table->integer('totalComprado');
             $table->float('valorTotalCFornecedores');

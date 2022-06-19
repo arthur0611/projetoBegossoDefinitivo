@@ -33,6 +33,11 @@ class FuncionarioController extends Controller
         return view('funcionario.listarFuncionario',['funcionario' => $funcionario]);
     }
 
+    public function relatorio(){
+        $funcionario = funcionario::all();
+        return view('funcionario.relatorioFuncionario',['funcionario' => $funcionario]);
+    }
+
     
     public function destroy($id){
         $funcionario = funcionario::findOrFail($id);

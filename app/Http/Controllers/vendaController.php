@@ -29,6 +29,11 @@ class vendaController extends Controller
         return view('venda.listarVenda',['venda' => $venda]);
     }
 
+    public function relatorio(){
+        $venda = venda::all();
+        return view('venda.relatorioVenda',['venda' => $venda]);
+    }
+
     public function destroy($id){
         $venda = venda::findOrFail($id);
         $venda->delete();

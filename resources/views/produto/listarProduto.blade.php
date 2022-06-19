@@ -55,8 +55,8 @@
             <div class="col-sm-12">
     <table class="table table-striped">
         <tr>
-            <th>tipojogo_id</th>
-            <th>tipo_plataforma_id</th>
+            <th>Tipo de Jogo</th>
+            <th>Tipo Plataforma</th>
             <th>Descrição Produto</th>
             <th>Quantidade Estoque</th>
             <th>valor Compra</th>
@@ -68,7 +68,7 @@
             <th>Editar</th>
             <th>Deletar</th>
         </tr>
-
+        
         @foreach($produto as $produto)
         <tr>
             <td>{{$produto->tipojogo_id}}</td>
@@ -87,6 +87,8 @@
         @endforeach
     </table>
     <a href="/produto/novo"><button class="btn btn-success">Cadastrar novo Produto</button></a>
+    <a href="/produto/relatorio"><button class="btn btn-primary">Relatorio Produto</button></a>
+        </div>
         </div>
     </div>   
 </div>

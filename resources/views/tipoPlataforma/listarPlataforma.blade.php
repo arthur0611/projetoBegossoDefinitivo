@@ -69,6 +69,7 @@
         @endforeach
     </table>
     <a href="/tipoPlataforma/novo"><button class="btn btn-success">Cadastrar nova Plataforma</button></a>
+    <a href="/tipoPlataforma/relatorio"><button class="btn btn-primary">Relatorio Plataforma</button></a>
         </div>
     </div>   
 </div>

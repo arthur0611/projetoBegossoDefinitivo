@@ -23,6 +23,11 @@ class PlataformaController extends Controller
         return view('tipoPlataforma.listarPlataforma',['tipoPlataformas' => $tipoPlataformas]);
     }
 
+    public function relatorio(){
+        $tipoPlataformas = tipo_plataforma::all();
+        return view('tipoPlataforma.relatorioPlataforma',['tipoPlataformas' => $tipoPlataformas]);
+    }
+
     
     public function destroy($id){
         $tipoPlataforma = tipo_plataforma::findOrFail($id);

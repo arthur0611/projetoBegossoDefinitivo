@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cadastrar novo tipo de jogo</title>
-
+    <title>Listar tipo de jogos</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
+
+
+
 </head>
 <body>
+
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
@@ -44,33 +48,32 @@
 
 <br>
 <br>
+<body>
+<br>
+<br>
+<h1><center>Relatorio Tipo Jogo</center></h1>
 
-<!-- formulario -->
-<div class="container">
+<br>
+<br>
+<!-- lista -->
+    <div class="container">
         <div class="row">
             <div class="col-sm-12">
-    <form action="{{ route('salvar_compraFornecedores') }}" method="post">
-        @csrf
-        <div><label for="descricao"  class="form-label">Fornecedor</label>
-            <input type="text" class="form-control" name="Fornecedor_id" id="Fornecedor_id"> 
-        </div>
-        <div><label for="descricao"  class="form-label">Produto</label>
-            <input type="text" class="form-control" name="Produto_id" id="Produto_id"> 
-        </div>
-        <div><label for="descricao"  class="form-label">Data Compra</label>
-            <input type="text" class="form-control" name="dataCompra" id="dataCompra"> 
-        </div>
-        <div><label for="descricao"  class="form-label">Total Comprado</label>
-            <input type="text" class="form-control" name="totalComprado" id="totalComprado"> 
-        </div>
-        <div><label for="descricao"  class="form-label">Valor Total</label>
-            <input type="text" class="form-control" name="valorTotalCFornecedores" id="valorTotalCFornecedores"> 
-        </div>
+    <table class="table table-striped">
+        <tr>
+            <th>ID</th>
+            <th>Descrição</th>
+        </tr>
 
-        <button type="submit" class="btn btn-success">Salvar</button>
-    </form>
-</div>
-</div>
+        @foreach($tipojogos as $tipojogo)
+        <tr>
+            <td>{{$tipojogo->id}}</td>
+            <td>{{$tipojogo->descricao}}</td>
+        </tr>    
+        @endforeach
+    </table>
+        </div>
+    </div>   
 </div>
     
 </body>

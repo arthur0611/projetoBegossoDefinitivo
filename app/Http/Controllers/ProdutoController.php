@@ -33,6 +33,11 @@ class ProdutoController extends Controller
         return view('produto.listarProduto',['produto' => $produto]);
     }
 
+    public function relatorio(){
+        $produto = produto::all();
+        return view('produto.relatorioProduto',['produto' => $produto]);
+    }
+
     public function destroy($id){
         $produto = produto::findOrFail($id);
         $produto->delete();

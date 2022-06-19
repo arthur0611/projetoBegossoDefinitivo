@@ -56,26 +56,29 @@
     <table class="table table-striped">
         <tr>
             <th>Fornecedor</th>
-            <th>data Compra</th>
-            <th>total Comprado</th>
-            <th>valor Total</th>
+            <th>Produto</th>
+            <th>Data Compra</th>
+            <th>Total Comprado</th>
+            <th>Valor Total</th>
             <th>Editar</th>
             <th>Deletar</th>
         </tr>
 
-        @foreach($compraVenda as $compraVenda)
+        @foreach($compraFornecedor as $compraFornecedor)
         <tr>
-            <td>{{$compraVenda->Fornecedor_id}}</td>
-            <td>{{$compraVenda->dataCompra}}</td>
-            <td>{{$compraVenda->totalComprado}}</td>
-            <td>{{$compraVenda->valorTotalCFornecedores}}</td>
+            <td>{{$compraFornecedor->Fornecedor_id}}</td>
+            <td>{{$compraFornecedor->Produto_id}}</td>
+            <td>{{$compraFornecedor->dataCompra}}</td>
+            <td>{{$compraFornecedor->totalComprado}}</td>
+            <td>{{$compraFornecedor->valorTotalCFornecedores}}</td>
         
-            <td><a href="{{ route('editar_compraFornecedores',['id' => $compraVenda->id] )}}"> Editar</a></td>
-            <td><a href="{{ route('excluir_compraFornecedores',['id' => $compraVenda->id] )}}" >Excluir</a></td> 
+            <td><a href="{{ route('editar_compraFornecedores',['id' => $compraFornecedor->id] )}}"> Editar</a></td>
+            <td><a href="{{ route('excluir_compraFornecedores',['id' => $compraFornecedor->id] )}}" >Excluir</a></td> 
         </tr>    
         @endforeach
     </table>
     <a href="/compraFornecedores/novo"><button class="btn btn-success">Cadastrar novo fornecedor</button></a>
+    <a href="/compraFornecedores/relatorio"><button class="btn btn-primary">Relatorio Compra Fornecedor</button></a>
   </div>
     </div>   
 </div>

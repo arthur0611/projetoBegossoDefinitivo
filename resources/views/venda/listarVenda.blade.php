@@ -79,6 +79,7 @@
         @endforeach
     </table>
     <a href="/venda/novo"><button class="btn btn-success">Cadastrar nova venda</button></a>
+    <a href="/venda/relatorio"><button class="btn btn-primary">Relatorio Venda</button></a>
         </div>
     </div>   
 </div>
