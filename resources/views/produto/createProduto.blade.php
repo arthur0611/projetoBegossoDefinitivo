@@ -54,43 +54,43 @@
         @csrf
         <div>
             <label for="tipojogo_id"  class="form-label">tipojogo_id</label>
-            <input type="number" class="form-control" name="tipojogo_id" id="tipojogo_id"> 
+            <input type="number" class="form-control" name="tipojogo_id" id="tipojogo_id" required> 
         </div>
         <div>
             <label for="tipo_plataforma_id"  class="form-label">tipo_plataforma_id</label>
-            <input type="number" class="form-control" name="tipo_plataforma_id" id="tipo_plataforma_id"> 
+            <input type="number" class="form-control" name="tipo_plataforma_id" id="tipo_plataforma_id" required> 
         </div>
         <div>
             <label for="descricaoproduto"  class="form-label">Descrição Produto</label>
-            <input type="text" class="form-control" name="descricaoproduto" id="descricaoproduto"> 
+            <input type="text" class="form-control" name="descricaoproduto" id="descricaoproduto" required> 
         </div>
         <div>
             <label for="quantidadeEstoque"  class="form-label">Quantidade Estoque</label>
-            <input type="text" class="form-control" name="quantidadeEstoque" id="quantidadeEstoque"> 
+            <input type="text" class="form-control" name="quantidadeEstoque" id="quantidadeEstoque" required> 
         </div>
         <div>
             <label for="valorCompra"  class="form-label">Valor Compra</label>
-            <input type="text" class="form-control" name="valorCompra" id="valorCompra"> 
+            <input type="text" class="form-control" name="valorCompra" id="valorCompra" required> 
         </div>
         <div>
             <label for="valorVenda"  class="form-label">Valor Venda</label>
-            <input type="text" class="form-control" name="valorVenda" id="valorVenda"> 
+            <input type="text" class="form-control" name="valorVenda" id="valorVenda" required> 
         </div>
         <div>
             <label for="dataLancamento"  class="form-label">Data Lançamento</label>
-            <input type="text" class="form-control" name="dataLancamento" id="dataLancamento"> 
+            <input type="text" class="form-control" name="dataLancamento" id="dataLancamento" required> 
         </div>
         <div>
             <label for="empresa"  class="form-label">Empresa</label>
-            <input type="text" class="form-control" name="empresa" id="empresa"> 
+            <input type="text" class="form-control" name="empresa" id="empresa" required> 
         </div>
         <div>
             <label for="classificacaoEtaria"  class="form-label">Classificacao Etaria</label>
-            <input type="text" class="form-control" name="classificacaoEtaria" id="classificacaoEtaria"> 
+            <input type="text" class="form-control" name="classificacaoEtaria" id="classificacaoEtaria" required> 
         </div>
         <div>
             <label for="classificacaoQuantidade"  class="form-label">Classificacao Quantidade</label>
-            <input type="text" class="form-control" name="classificacaoQuantidade" id="classificacaoQuantidade"> 
+            <input type="text" class="form-control" name="classificacaoQuantidade" id="classificacaoQuantidade" required> 
         </div>
 
         <button type="submit" class="btn btn-success">Salvar</button>

@@ -76,8 +76,8 @@
             <td>{{$produto->tipo_plataforma_id}}</td>
             <td>{{$produto->descricaoproduto}}</td>
             <td>{{$produto->quantidadeEstoque}}</td>
-            <td>R$:{{$produto->valorCompra}}</td>
-            <td>R$:{{$produto->valorVenda}}</td>
+            <td>R$ {{$produto->valorCompra}}</td>
+            <td>R$ {{$produto->valorVenda}}</td>
             <td>{{$produto->dataLancamento}}</td>
             <td>{{$produto->empresa}}</td>
             <td>{{$produto->classificacaoEtaria}}</td>

@@ -53,19 +53,19 @@
     <form action="{{ route('salvar_compraFornecedores') }}" method="post">
         @csrf
         <div><label for="descricao"  class="form-label">Fornecedor</label>
-            <input type="text" class="form-control" name="Fornecedor_id" id="Fornecedor_id"> 
+            <input type="text" class="form-control" name="Fornecedor_id" id="Fornecedor_id" required> 
         </div>
         <div><label for="descricao"  class="form-label">Produto</label>
-            <input type="text" class="form-control" name="Produto_id" id="Produto_id"> 
+            <input type="text" class="form-control" name="Produto_id" id="Produto_id" required> 
         </div>
         <div><label for="descricao"  class="form-label">Data Compra</label>
-            <input type="text" class="form-control" name="dataCompra" id="dataCompra"> 
+            <input type="text" class="form-control" name="dataCompra" id="dataCompra" required> 
         </div>
         <div><label for="descricao"  class="form-label">Total Comprado</label>
-            <input type="text" class="form-control" name="totalComprado" id="totalComprado"> 
+            <input type="text" class="form-control" name="totalComprado" id="totalComprado" required> 
         </div>
         <div><label for="descricao"  class="form-label">Valor Total</label>
-            <input type="text" class="form-control" name="valorTotalCFornecedores" id="valorTotalCFornecedores"> 
+            <input type="text" class="form-control" name="valorTotalCFornecedores" id="valorTotalCFornecedores" required> 
         </div>
 
         <button type="submit" class="btn btn-success">Salvar</button>

@@ -54,15 +54,15 @@
         @csrf
         <div>
             <label for="tipojogo_id"  class="form-label">Compra Fornecedores</label>
-            <input type="number" class="form-control" name="compra_fornecedors_id" id="compra_fornecedors_id"> 
+            <input type="number" class="form-control" name="compra_fornecedors_id" id="compra_fornecedors_id" required> 
         </div>
         <div>
             <label for="tipo_plataforma_id"  class="form-label">Data Pagamento</label>
-            <input type="date" class="form-control" name="DataPagamento" id="DataPagamento"> 
+            <input type="date" class="form-control" name="DataPagamento" id="DataPagamento" required> 
         </div>
         <div>
             <label for="descricaoproduto"  class="form-label">Parcela</label>
-            <input type="number" class="form-control" name="Parcela" id="Parcela"> 
+            <input type="number" class="form-control" name="Parcela" id="Parcela" required> 
         </div>
 
         <button type="submit" class="btn btn-success">Salvar</button>

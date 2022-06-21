@@ -4,9 +4,23 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\venda;
+use App\Models\Produto;
 
 class vendaController extends Controller
 {
+    public function BaixarEstoque($id){
+        $produto = produto::findOrFail($id);
+        $venda = venda::all();
+        $saida = $venda->quantidadeCompra;
+        $produto->quantidadeEstoque-$saida;
+
+        $produto -> update([
+            'quantidadeEstoque'=>$request->quantidadeEstoque,
+        ]);
+    }
+
+  
+
     public function create(){
         return view('venda.createVenda');
     }
@@ -20,6 +34,8 @@ class vendaController extends Controller
             'quantidadeCompra'=>$request->quantidadeCompra,
             'TotalVenda'=>$request->TotalVenda,
         ]);
+        
+        // $this->BaixarEstoque($request->Produto_id);
         return view('welcome');
     }
 

@@ -53,7 +53,7 @@
     <form action="{{ route('salvar_tipoJogo') }}" method="post">
         @csrf
         <div><label for="descricao"  class="form-label">Descrição</label>
-            <input type="text" class="form-control" name="descricao" id="descricao"> 
+            <input type="text" class="form-control" name="descricao" id="descricao" required> 
         </div>
 
         <button type="submit" class="btn btn-success">Salvar</button>

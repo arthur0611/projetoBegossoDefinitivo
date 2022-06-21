@@ -54,39 +54,39 @@
         @csrf
         <div>
             <label for="nome"  class="form-label">Nome</label>
-            <input type="text" class="form-control" name="nome" id="nome"> 
+            <input type="text" class="form-control" name="nome" id="nome" required> 
         </div>
         <div>
             <label for="idade"  class="form-label">Idade</label>
-            <input type="text" class="form-control" name="idade" id="idade"> 
+            <input type="text" class="form-control" name="idade" id="idade" required> 
         </div>
         <div>
             <label for="email"  class="form-label">Email</label>
-            <input type="text" class="form-control" name="email" id="email"> 
+            <input type="text" class="form-control" name="email" id="email" required> 
         </div>
         <div>
             <label for="telefone"  class="form-label">Telefone</label>
-            <input type="text" class="form-control" name="telefone" id="telefone"> 
+            <input type="text" class="form-control" name="telefone" id="telefone" required> 
         </div>
         <div>
             <label for="cidade"  class="form-label">Cidade</label>
-            <input type="text" class="form-control" name="cidade" id="cidade"> 
+            <input type="text" class="form-control" name="cidade" id="cidade" required> 
         </div>
         <div>
             <label for="estado"  class="form-label">Estado</label>
-            <input type="text" class="form-control" name="estado" id="estado"> 
+            <input type="text" class="form-control" name="estado" id="estado" required> 
         </div>
         <div>
             <label for="bairro"  class="form-label">Bairro</label>
-            <input type="text" class="form-control" name="bairro" id="bairro"> 
+            <input type="text" class="form-control" name="bairro" id="bairro" required> 
         </div>
         <div>
             <label for="rua"  class="form-label">Rua</label>
-            <input type="text" class="form-control" name="rua" id="rua"> 
+            <input type="text" class="form-control" name="rua" id="rua" required> 
         </div>
         <div>
             <label for="cpf"  class="form-label">CPF</label>
-            <input type="text" class="form-control" name="cpf" id="cpf"> 
+            <input type="text" class="form-control" name="cpf" id="cpf" required> 
         </div>
         
         <button type="submit" class="btn btn-success">Salvar</button>

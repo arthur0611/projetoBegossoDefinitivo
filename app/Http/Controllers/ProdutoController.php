@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\produto;
+use App\Models\venda;
 
 class ProdutoController extends Controller
 {
+
     public function create(){
         return view('produto.createProduto');
     }

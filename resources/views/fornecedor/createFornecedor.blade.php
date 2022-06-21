@@ -54,31 +54,31 @@
         @csrf
         <div>
             <label for="nome"  class="form-label">Nome</label>
-            <input type="text" class="form-control" name="nome" id="nome"> 
+            <input type="text" class="form-control" name="nome" id="nome" required> 
         </div>
         <div>
             <label for="cnpj"  class="form-label">CNPJ</label>
-            <input type="text" class="form-control" name="cnpj" id="cnpj"> 
+            <input type="text" class="form-control" name="cnpj" id="cnpj" required> 
         </div>
         <div>
             <label for="nomeFantasia"  class="form-label">Nome Fantasia</label>
-            <input type="text" class="form-control" name="nomeFantasia" id="nomeFantasia"> 
+            <input type="text" class="form-control" name="nomeFantasia" id="nomeFantasia" required> 
         </div>
         <div>
             <label for="endereco"  class="form-label">Endereço</label>
-            <input type="text" class="form-control" name="endereco" id="endereco"> 
+            <input type="text" class="form-control" name="endereco" id="endereco" required> 
         </div>
         <div>
             <label for="contato"  class="form-label">Contato</label>
-            <input type="text" class="form-control" name="contato" id="contato"> 
+            <input type="text" class="form-control" name="contato" id="contato" required> 
         </div>
         <div>
             <label for="cep"  class="form-label">CEP</label>
-            <input type="text" class="form-control" name="cep" id="cep"> 
+            <input type="text" class="form-control" name="cep" id="cep" required> 
         </div>
         <div>
             <label for="site"  class="form-label">Site</label>
-            <input type="text" class="form-control" name="site" id="site"> 
+            <input type="text" class="form-control" name="site" id="site" required> 
         </div>
 
         <button type="submit" class="btn btn-success">Salvar</button>

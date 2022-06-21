@@ -93,7 +93,7 @@
   <div class="card-body">
     <h5 class="card-title">The Sims 4</h5>
     <p class="card-text">Preço: R$150 <br>
-      Tipo Jogo: Mundo Livre<br>
+      Tipo Jogo: Simulação<br>
       Tipo Plataforma: PC<br></p>
     <a href="#" class="btn btn-primary">Ver Produto</a>
   </div>
@@ -105,8 +105,8 @@
             <div class="card-body">
              <h5 class="card-title">Battlefield 3</h5>
              <p class="card-text">Preço: R$150 <br>
-              Tipo Jogo:Mundo Livre<br>
-              Tipo Plataforma:Xbox One<br></p>
+              Tipo Jogo: FPS<br>
+              Tipo Plataforma:Playstation 4<br></p>
              <a href="#" class="btn btn-primary">Ver Produto</a>
             </div>
         </div>
@@ -122,8 +122,7 @@
         <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Xbox one</h5>
-    <p class="card-text">Preço: R$150 <br>
-      Tipo Jogo:Mundo Livre<br>
+    <p class="card-text">Preço: R$2500,00 <br>
       Tipo Plataforma:Xbox One<br></p>
     <a href="#" class="btn btn-primary">Ver Produto</a>
   </div>
@@ -135,8 +134,7 @@
   <div class="card-body">
     <h5 class="card-title">Playstation 4</h5>
     <p class="card-text">
-      Preço: R$150 <br>
-      Tipo Jogo:Mundo Livre<br>
+      Preço: R$3500,00 <br>
       Tipo Plataforma:Xbox One<br>
     </p>
     <a href="#" class="btn btn-primary">Ver Produto</a>
@@ -149,8 +147,7 @@
             <div class="card-body">
              <h5 class="card-title">Xbox 360</h5>
              <p class="card-text">
-              Preço: R$150 <br>
-              Tipo Jogo: Mundo Livre<br>
+              Preço: R$1500,00 <br>
               Tipo Plataforma: Xbox One<br></p>
              <a href="#" class="btn btn-primary">Ver Produto</a>
             </div>
@@ -159,7 +156,34 @@
         </div>
     </div>
 </div>
-
-
     </body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<footer class="page-footer font-small blue">
+
+
+  <div class="footer-copyright text-center py-3">© 2022 Copyright
+    <label>Arthur Pirolo De Oliveira</label>
+    <br>
+    <label>arthurpirolo01@hotmail.com</label>
+  </div>
+
+</footer>
+
 </html>

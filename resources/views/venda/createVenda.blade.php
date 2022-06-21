@@ -54,27 +54,27 @@
         @csrf
         <div>
             <label for="tipojogo_id"  class="form-label">Cliente</label>
-            <input type="number" class="form-control" name="Cliente_id" id="Cliente_id"> 
+            <input type="number" class="form-control" name="Cliente_id" id="Cliente_id" required> 
         </div>
         <div>
             <label for="tipo_plataforma_id"  class="form-label">funcionario</label>
-            <input type="number" class="form-control" name="Funcionario_id" id="Funcionario_id"> 
+            <input type="number" class="form-control" name="Funcionario_id" id="Funcionario_id" required> 
         </div>
         <div>
             <label for="descricaoproduto"  class="form-label">Produto</label>
-            <input type="number" class="form-control" name="Produto_id" id="Produto_id"> 
+            <input type="number" class="form-control" name="Produto_id" id="Produto_id" required> 
         </div>
         <div>
             <label for="quantidadeEstoque"  class="form-label">Data Compra</label>
-            <input type="text" class="form-control" name="dataCompra" id="dataCompra"> 
+            <input type="text" class="form-control" name="dataCompra" id="dataCompra" required> 
         </div>
         <div>
             <label for="valorCompra"  class="form-label">Quantidade Compra</label>
-            <input type="text" class="form-control" name="quantidadeCompra" id="quantidadeCompra"> 
+            <input type="text" class="form-control" name="quantidadeCompra" id="quantidadeCompra" required> 
         </div>
         <div>
             <label for="valorVenda"  class="form-label">Total Venda</label>
-            <input type="text" class="form-control" name="TotalVenda" id="TotalVenda"> 
+            <input type="text" class="form-control" name="TotalVenda" id="TotalVenda" required> 
 
         <button type="submit" class="btn btn-success">Salvar</button>
     </form>
