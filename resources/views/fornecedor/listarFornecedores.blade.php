@@ -51,6 +51,7 @@
 
 <!-- lista -->
     <div class="container">
+    <h1><center>Listar Fornecedores</center></h1>
         <div class="row">
             <div class="col-sm-12">
     <table class="table table-striped">
@@ -74,7 +75,7 @@
         @endforeach
     </table>
     <a href="/fornecedor/novo"><button class="btn btn-success">Cadastrar novo fornecedor</button></a>
-    <a class="btn btn-primary" href="/fornecedor/relatorio" role="button">Relatotio Cliente</a>      
+    <a class="btn btn-primary" href="/fornecedor/relatorio" role="button">Relatotio Fornecedores</a>      
   </div>
     </div>   
 </div>

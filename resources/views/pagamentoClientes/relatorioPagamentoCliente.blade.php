@@ -13,42 +13,27 @@
 
 
 </head>
-<body>
-<br>
-<br>
-<h1><center>Relatorio Cliente</center></h1>
-<br>
-    <div class="container">
+
+
+<div class="container">
+    <h1><center>Relatorio Pagamento Cliente</center></h1>
         <div class="row">
             <div class="col-sm-12">
     <table class="table table-striped">
         <tr>
-            <th>Nome</th>
-            <th>Idade</th>
-            <th>Email</th>
-            <th>Telefone</th>
-            <th>Cidade</th>
-            <th>Estado</th>
-            <th>Bairro</th>
-            <th>Rua</th>
-            <th>CPF</th>
+            <th>Venda</th>
+            <th>Data Pagamento</th>
+            <th>Parcela</th>
         </tr>
 
-        @foreach($cliente as $cliente)
+        @foreach($pagamentoCliente as $pagamentoCliente)
         <tr>
-            <td>{{$cliente->nome}}</td>
-            <td>{{$cliente->idade}}</td>
-            <td>{{$cliente->email}}</td>
-            <td>{{$cliente->telefone}}</td>
-            <td>{{$cliente->cidade}}</td>
-            <td>{{$cliente->estado}}</td>
-            <td>{{$cliente->bairro}}</td>
-            <td>{{$cliente->rua}}</td>
-            <td>{{$cliente->cpf}}</td>
+            <td>{{$pagamentoCliente->Vendas_id}}</td>
+            <td>{{$pagamentoCliente->DataPagamento}}</td>
+            <td>{{$pagamentoCliente->Parcela}}</td>
         </tr>    
         @endforeach
     </table>
-        </div>
+  </div>
     </div>   
 </div>
-</body>

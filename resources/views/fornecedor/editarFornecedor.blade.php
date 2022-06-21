@@ -48,6 +48,7 @@
 
 <!-- form -->
 <div class="container">
+<h1><center>Editar Fornecedor</center></h1>
         <div class="row">
             <div class="col-sm-12">
     <form action="{{ route('atualizar_fornecedor', ['id' => $fornecedor->id]) }}" method="post">

@@ -47,6 +47,7 @@
 
 <!-- formulario -->
 <div class="container">
+<h1><center>Cadastrar Fornecedor</center></h1>
         <div class="row">
             <div class="col-sm-12">
     <form action="{{ route('salvar_fornecedor') }}" method="post">

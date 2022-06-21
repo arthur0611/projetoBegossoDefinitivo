@@ -43,6 +43,7 @@
 
 <!-- lista -->
     <div class="container">
+    <h1><center>Listar Cliente</center></h1>
         <div class="row">
             <div class="col-sm-12">
     <table class="table table-striped">

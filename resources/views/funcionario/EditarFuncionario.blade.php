@@ -48,6 +48,7 @@
 
 <!-- form -->
 <div class="container">
+<h1><center>Editar Funcionario</center></h1>
         <div class="row">
             <div class="col-sm-12">
     <form action="{{ route('atualizar_funcionario', ['id' => $funcionario->id]) }}" method="post">
@@ -88,14 +89,16 @@
             <label for="complemento"  class="form-label">Complemento</label>
             <input type="text" class="form-control" name="complemento" id="complemeto" value = "{{$funcionario->complemento}}"> 
         </div>
-        <div>
+        <div class="row">
+        <div class="col-sm-6">
             <label for="salario"  class="form-label">Salario</label>
             <input type="text" class="form-control" name="salario" id="salario" value = "{{$funcionario->salario}}"> 
         </div>
-        <div>
+        <div class="col-sm-6">
             <label for="dataAdmissao"  class="form-label">Data Admissão</label>
             <input type="text" class="form-control" name="dataAdmissao" id="dataAdmissao" value = "{{$funcionario->dataAdmissao}}"> 
         </div>
+      </div>
 
 
         <button type="submit" class="btn btn-success">Salvar</button>

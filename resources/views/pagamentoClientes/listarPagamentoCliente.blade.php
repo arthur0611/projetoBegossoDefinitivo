@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar tipo de jogo</title>
-
+    <title>Listar Plataformas</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
+
+
+
 </head>
 <body>
+
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">NightFallBR</a>
@@ -28,7 +33,6 @@
         <li class="nav-item">
           <a class="nav-link" href="/funcionario">Funcionario</a>
         </li>
-       
         <li class="nav-item">
           <a class="nav-link" href="/tipoJogo/listar">listar tipo Jogos</a>
         </li>
@@ -45,23 +49,34 @@
 <br>
 <br>
 
-
-<!-- form -->
-<div class="container">
-<h1><center>Editar Tipo de Plataforma</center></h1>
+<!-- lista -->
+    <div class="container">
+    <h1><center>Listar Pagamento Cliente</center></h1>
         <div class="row">
             <div class="col-sm-12">
-    <form action="{{ route('atualizar_tipoPlataforma', ['id' => $tipoPlataforma->id]) }}" method="post">
-        @csrf
-        <div>
-            <label for="descricao" class="form-label">Descrição</label>
-            <input type="text" class="form-control" name="descricao" id="descricao" value = "{{$tipoPlataforma->descricao}}"> 
-        </div>
+    <table class="table table-striped">
+        <tr>
+            <th>Venda</th>
+            <th>Data Pagamento</th>
+            <th>Parcela</th>
+            <th>Editar</th>
+            <th>Deletar</th>
+        </tr>
 
-        <button type="submit" class="btn btn-success">Salvar</button>
-    </form>
-</div>
-</div>
+        @foreach($pagamentoCliente as $pagamentoCliente)
+        <tr>
+            <td>{{$pagamentoCliente->Vendas_id}}</td>
+            <td>{{$pagamentoCliente->DataPagamento}}</td>
+            <td>{{$pagamentoCliente->Parcela}}</td>
+            <td><a href="{{ route('editar_pagamentoCliente',['id' => $pagamentoCliente->id] )}}"> Editar</a></td>
+            <td><a href="{{ route('excluir_pagamentoCliente',['id' => $pagamentoCliente->id] )}}" >Excluir</a></td> 
+        </tr>    
+        @endforeach
+    </table>
+    <a href="/pagamentoCliente/novo"><button class="btn btn-success">Cadastrar novo Pagamento de Cliente</button></a>
+    <a href="/pagamentoCliente/relatorio"><button class="btn btn-primary">Relatorio Pagamento Clientes</button></a>
+        </div>
+    </div>   
 </div>
     
 </body>

@@ -47,6 +47,7 @@
 
 <!-- formulario -->
 <div class="container">
+<h1><center>Cadastrar Tipo Jogo</center></h1>
         <div class="row">
             <div class="col-sm-12">
     <form action="{{ route('salvar_tipoJogo') }}" method="post">

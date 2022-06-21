@@ -147,3 +147,33 @@ Route::post('/produto/edit/{id}','ProdutoController@update')->name('atualizar_pr
        Route::get('/compraFornecedores/edit/{id}','compraFornecedoresController@edit')->name('editar_compraFornecedores');
        Route::post('/compraFornecedores/edit/{id}','compraFornecedoresController@update')->name('atualizar_compraFornecedores');
    
+//Pagamento Cliente
+  //post
+    Route::get('pagamentoCliente/novo','pagamentoClienteController@create');
+    Route::post('pagamentoCliente/novo','pagamentoClienteController@store')->name('salvar_pagamentoCliente');
+    //read
+    Route::get('/pagamentoCliente/listar','pagamentoClienteController@show');
+    //relatorio
+    Route::get('/pagamentoCliente/relatorio','pagamentoClienteController@relatorio');
+    //delete
+    Route::get('/pagamentoCliente/del/{id}','pagamentoClienteController@destroy')->name('excluir_pagamentoCliente');
+    //edit
+    Route::get('/pagamentoCliente/edit/{id}','pagamentoClienteController@edit')->name('editar_pagamentoCliente');
+    Route::post('/pagamentoCliente/edit/{id}','pagamentoClienteController@update')->name('atualizar_pagamentoCliente');
+
+
+//Pagamento Fornecedores
+  //post
+    Route::get('pagamentoFornecedores/novo','pagamentoFornecedorController@create');
+    Route::post('pagamentoFornecedores/novo','pagamentoFornecedorController@store')->name('salvar_pagamentoFornecedores');
+    //read
+    Route::get('/pagamentoFornecedores/listar','pagamentoFornecedorController@show');
+    //relatorio
+    Route::get('/pagamentoFornecedores/relatorio','pagamentoFornecedorController@relatorio');
+    //delete
+    Route::get('/pagamentoFornecedores/del/{id}','pagamentoFornecedorController@destroy')->name('excluir_pagamentoFornecedores');
+    //edit
+    Route::get('/pagamentoFornecedores/edit/{id}','pagamentoFornecedorController@edit')->name('editar_pagamentoFornecedores');
+    Route::post('/pagamentoFornecedores/edit/{id}','pagamentoFornecedorController@update')->name('atualizar_pagamentoFornecedores');
+
+

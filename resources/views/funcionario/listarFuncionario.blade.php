@@ -51,6 +51,7 @@
 
 <!-- lista -->
     <div class="container">
+    <h1><center>Listar Funcionario</center></h1>
         <div class="row">
             <div class="col-sm-12">
     <table class="table table-striped">
@@ -62,7 +63,7 @@
             <th>Rua</th>
             <th>CPF</th>
             <th>Bairro</th>
-            <th>Esatdo</th>
+            <th>Estado</th>
             <th>Complemento</th>
             <th>Salario</th>
             <th>Data Admissão</th>
@@ -80,7 +81,7 @@
             <td>{{$funcionario->cpf}}</td>
             <td>{{$funcionario->bairro}}</td>
             <td>{{$funcionario->estado}}</td>
-            <td>{{$funcionario->complemeto}}</td>
+            <td>{{$funcionario->complemento}}</td>
             <td>{{$funcionario->salario}}</td>
             <td>{{$funcionario->dataAdmissao}}</td>
             <td><a href="{{ route('editar_funcionario',['id' => $funcionario->id] )}}"> Editar</a></td>

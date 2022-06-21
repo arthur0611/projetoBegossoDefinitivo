@@ -51,6 +51,7 @@
 
 <!-- lista -->
     <div class="container">
+    <h1><center>Listar Produto</center></h1>
         <div class="row">
             <div class="col-sm-12">
     <table class="table table-striped">

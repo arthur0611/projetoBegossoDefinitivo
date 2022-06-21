@@ -53,6 +53,12 @@
         <li class="nav-item">
           <a class="nav-link" href="/compraFornecedores/listar">Listar Compra de Fornecedores</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pagamentoCliente/listar">Listar Pagamento de Clientes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pagamentoFornecedores/listar">Listar Pagamento de Fornecedores</a>
+        </li>
 
       </ul>
       <form class="d-flex" role="search">
@@ -70,33 +76,38 @@
     <div class="row">
         <div class="col-sm-4">
         <div class="card" style="width: 18rem;">
-  <img src="" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Gta 5</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <p class="card-text">Preço: R$150 <br>
+      Tipo Jogo:Mundo Livre<br>
+      Tipo Plataforma:Xbox One<br>
+    </p>
+    <a href="#" class="btn btn-primary">Ver Produto</a>
   </div>
 </div>
         </div>
 
         <div class="col-sm-4">
         <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+
   <div class="card-body">
     <h5 class="card-title">The Sims 4</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <p class="card-text">Preço: R$150 <br>
+      Tipo Jogo: Mundo Livre<br>
+      Tipo Plataforma: PC<br></p>
+    <a href="#" class="btn btn-primary">Ver Produto</a>
   </div>
 </div>
         </div>
 
         <div class="col-sm-4">
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
              <h5 class="card-title">Battlefield 3</h5>
-             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-             <a href="#" class="btn btn-primary">Go somewhere</a>
+             <p class="card-text">Preço: R$150 <br>
+              Tipo Jogo:Mundo Livre<br>
+              Tipo Plataforma:Xbox One<br></p>
+             <a href="#" class="btn btn-primary">Ver Produto</a>
             </div>
         </div>
 
@@ -109,33 +120,39 @@
     <div class="row">
         <div class="col-sm-4">
         <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Xbox one</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <p class="card-text">Preço: R$150 <br>
+      Tipo Jogo:Mundo Livre<br>
+      Tipo Plataforma:Xbox One<br></p>
+    <a href="#" class="btn btn-primary">Ver Produto</a>
   </div>
 </div>
         </div>
 
         <div class="col-sm-4">
         <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Playstation 4</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <p class="card-text">
+      Preço: R$150 <br>
+      Tipo Jogo:Mundo Livre<br>
+      Tipo Plataforma:Xbox One<br>
+    </p>
+    <a href="#" class="btn btn-primary">Ver Produto</a>
   </div>
 </div>
         </div>
 
         <div class="col-sm-4">
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
              <h5 class="card-title">Xbox 360</h5>
-             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-             <a href="#" class="btn btn-primary">Go somewhere</a>
+             <p class="card-text">
+              Preço: R$150 <br>
+              Tipo Jogo: Mundo Livre<br>
+              Tipo Plataforma: Xbox One<br></p>
+             <a href="#" class="btn btn-primary">Ver Produto</a>
             </div>
         </div>
 

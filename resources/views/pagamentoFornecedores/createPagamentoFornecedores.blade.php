@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar tipo de jogo</title>
+    <title>cadastrar Produto</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">NightFallBR</a>
@@ -28,7 +29,6 @@
         <li class="nav-item">
           <a class="nav-link" href="/funcionario">Funcionario</a>
         </li>
-       
         <li class="nav-item">
           <a class="nav-link" href="/tipoJogo/listar">listar tipo Jogos</a>
         </li>
@@ -45,17 +45,24 @@
 <br>
 <br>
 
-
-<!-- form -->
+<!-- formulario -->
 <div class="container">
-<h1><center>Editar Tipo de Plataforma</center></h1>
+<h1><center>Cadastrar Pagamento Fornecedores</center></h1>
         <div class="row">
             <div class="col-sm-12">
-    <form action="{{ route('atualizar_tipoPlataforma', ['id' => $tipoPlataforma->id]) }}" method="post">
+    <form action="{{ route('salvar_pagamentoFornecedores') }}" method="post">
         @csrf
         <div>
-            <label for="descricao" class="form-label">Descrição</label>
-            <input type="text" class="form-control" name="descricao" id="descricao" value = "{{$tipoPlataforma->descricao}}"> 
+            <label for="tipojogo_id"  class="form-label">Compra Fornecedores</label>
+            <input type="number" class="form-control" name="compra_fornecedors_id" id="compra_fornecedors_id"> 
+        </div>
+        <div>
+            <label for="tipo_plataforma_id"  class="form-label">Data Pagamento</label>
+            <input type="date" class="form-control" name="DataPagamento" id="DataPagamento"> 
+        </div>
+        <div>
+            <label for="descricaoproduto"  class="form-label">Parcela</label>
+            <input type="number" class="form-control" name="Parcela" id="Parcela"> 
         </div>
 
         <button type="submit" class="btn btn-success">Salvar</button>

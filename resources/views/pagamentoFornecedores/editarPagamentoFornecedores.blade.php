@@ -48,14 +48,22 @@
 
 <!-- form -->
 <div class="container">
-<h1><center>Editar Tipo de Plataforma</center></h1>
+<h1><center>Editar Pagamento Cliente</center></h1>
         <div class="row">
             <div class="col-sm-12">
-    <form action="{{ route('atualizar_tipoPlataforma', ['id' => $tipoPlataforma->id]) }}" method="post">
+    <form action="{{ route('atualizar_pagamentoFornecedores', ['id' => $pagamentoFornecedor->id]) }}" method="post">
         @csrf
         <div>
-            <label for="descricao" class="form-label">Descrição</label>
-            <input type="text" class="form-control" name="descricao" id="descricao" value = "{{$tipoPlataforma->descricao}}"> 
+            <label for="descricao" class="form-label">Compra Fornecedores</label>
+            <input type="text" class="form-control" name="compra_fornecedors_id" id="compra_fornecedors_id" value = "{{$pagamentoFornecedor->compra_fornecedors_id}}"> 
+        </div>
+        <div>
+            <label for="descricao" class="form-label">Data Pagamento</label>
+            <input type="text" class="form-control" name="DataPagamento" id="DataPagamento" value = "{{$pagamentoFornecedor->DataPagamento}}"> 
+        </div>
+        <div>
+            <label for="descricao" class="form-label">Parcela</label>
+            <input type="text" class="form-control" name="Parcela" id="Parcela" value = "{{$pagamentoFornecedor->Parcela}}"> 
         </div>
 
         <button type="submit" class="btn btn-success">Salvar</button>

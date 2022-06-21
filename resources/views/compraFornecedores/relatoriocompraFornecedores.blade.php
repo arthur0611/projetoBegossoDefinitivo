@@ -16,7 +16,7 @@
 <body>
 <br>
 <br>
-<center>Relatorio Compra Funcionario</center>
+<h1><center>Relatorio Compra Funcionario</center></h1>
 <br>
     <div class="container">
         <div class="row">

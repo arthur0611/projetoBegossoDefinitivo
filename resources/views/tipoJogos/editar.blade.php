@@ -48,6 +48,7 @@
 
 <!-- form -->
 <div class="container">
+<h1><center>Editar Tipo De Jogo</center></h1>
         <div class="row">
             <div class="col-sm-12">
     <form action="{{ route('atualizar_tipoJogo', ['id' => $tipojogo->id]) }}" method="post">
